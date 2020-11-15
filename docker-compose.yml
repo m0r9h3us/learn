@@ -4,7 +4,7 @@ services:
   hugo:
     image: jojomi/hugo:latest
     volumes:
-      - ./hugo/:/src
+      - .:/src
     environment:
       - HUGO_WATCH=true
       - HUGO_REFRESH_TIME=3600
